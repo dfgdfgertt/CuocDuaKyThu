@@ -32,26 +32,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
-        Display display =
-                ((WindowManager)getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
-
-        switch (display.getRotation()) {
-//            case Surface.ROTATION_0:
-//                break;
-
-            case Surface.ROTATION_90:
-                break;
-
-//            case Surface.ROTATION_180:
-//                break;
-
-            case Surface.ROTATION_270:
-                break;
-        }
-
         AnhXa();
-        DisableSeekBar();
+        // DisableSeekBar();
         CountDownTimer countDownTimer = new CountDownTimer(60000,500) {
             @Override
             public void onTick(long millisUntilFinished) {
