@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         AnhXa();
-        // DisableSeekBar();
+        DisableSeekBar();
         CountDownTimer countDownTimer = new CountDownTimer(60000,500) {
             @Override
             public void onTick(long millisUntilFinished) {
