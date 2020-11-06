@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cooltext367737815922212"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+
+    </ImageView>
+    <CheckBox
+        android:id="@+id/cbcuong"
+        android:layout_above="@id/cbtai"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        ></CheckBox>
+    <CheckBox
+        android:id="@+id/cbtai"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_above="@id/cbtien"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        ></CheckBox>
+
+
+    <CheckBox
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/cbtien"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        ></CheckBox>
+
+    <SeekBar
+        android:id="@+id/sbcuong"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@mipmap/cuong2_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sbtai"
+        android:layout_toRightOf="@id/cbcuong">
+
+
+    </SeekBar>
+
+    <SeekBar
+        android:id="@+id/sbtai"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@mipmap/tai_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sbtien"
+        android:layout_toRightOf="@id/cbtien">
+
+    </SeekBar>
+
+
+    <SeekBar
+        android:id="@+id/sbtien"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@mipmap/tien_foreground"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/cbtai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </SeekBar>
+
+    <ImageButton
+        android:id="@+id/ibtnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:src="@mipmap/sta_foreground">
+
+    </ImageButton>
+
+</RelativeLayout>
